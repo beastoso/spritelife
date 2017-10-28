@@ -1,0 +1,276 @@
+/********* Fonts **********/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: #00BCD4;
+	height: 56px;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+header p {
+	margin: 16px 0 5px 0;
+}
+
+header a ~ p {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: #ECEFF1;
+	text-align: right;
+}
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+}
+
+p {
+	margin: 8px 0 0 0;
+}
+
+.container p {
+	text-align: center;
+	padding: 0;
+}
+
+.menu {
+	text-decoration: none;
+	padding: 6px;
+	margin: 0;
+	color: #727272;
+}
+
+.menu:visited {
+	color: #727272;
+}
+
+.menu:hover {
+	color: #FFA000;
+}
+
+.menu:active {
+	color: #FF630D;
+}
+
+
+#display-name {
+	font-weight: 400;
+}
+
+/****** Login Styling ******/
+
+.login {
+	margin: 86px auto 0 auto;
+	text-align: center;
+}
+
+#login-btn {
+	width: 225px;
+	padding: 0px 5px 3px 5px;
+	color: red;
+	font-size: 18px;
+	background-color: white;
+	border: 3px solid grey;
+	border-radius: 5px;
+}
+
+
+
+/****** Logo Div Styling ******/
+
+img {
+	margin: 0 auto;
+	display: block;
+}
+
+.title-text { /* Styling for the Clementine.js text */
+	padding: 0;
+	margin: -25px 0 0 0;
+	font-weight: 500;
+	font-size: 60px;
+	color: #FFA000;
+}
+
+/****** Click Styling ******/
+
+
+.btn {	/* Styling for buttons */
+	color: white;
+	background-color: #00BCD4;
+	display: inline-block;
+	border: 0;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px 5px;
+	width: 100px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.btn p {
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+
+.btn:focus {	/* Remove outline when hovering over button */
+	outline: none;
+}
+
+.btn:active {	/* Scale the button down by 10% when clicking on button */
+	transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	-moz-transform: scale(0.9, 0.9);
+}
+
+
+span {
+	font-weight: 500;
+}
+
+.menu-divide {
+	color: #FFFFFF;
+	display: inline;
+	margin: 0;
+}
+
+
+/* body styling */
+.container {
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+	width: 400px;
+}
+
+form {
+	padding: 10px 20px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+input[type=text] {
+	height: 28px;
+	width: 296px;
+	font-size: 20px;
+}
+
+#searchBtn {
+	width: 300px;
+	font-size: 18px;
+	padding: 7px;
+}
+
+
+/** result styling **/
+.result {
+	border: 1px grey solid;
+	border-radius: 3px;
+	margin: 3px;
+	padding: 10px;
+}
+.resultImage {
+	height: 120px;
+	width: 120px;
+	float: left;
+	margin-right: 10px;
+}
+
+.resultAddress, .resultPhone {
+	font-size: 12px;
+}
+
+.resultName {
+	font-size: 20px;
+}
+
+.resultStatus {
+	font-size: 11px;
+	color: red;
+}
+
+.resultRating {
+	color: #FFD700;
+}
+
+/** attendance styling **/
+.attendanceBlock {
+	margin: 5px;
+	text-align: center;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 14px;
+ 
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    left: 65%;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.active {
+	opacity: 1.0;
+	cursor: default;
+}
+
+.inactive {
+	opacity: 0.4;
+}
+
+/** navigation buttons **/
+#navigation {
+	display: inline;
+	margin: 5px 5px 10px 5px;
+}
+#nextBtn, #prevBtn {
+	color: black;
+	background-color: white;
+	border: 2px grey solid;
+}
+#nextBtn {
+	float: right;
+}
+
+#prevBtn {
+	float: left;
+}
